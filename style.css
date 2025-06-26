@@ -1,0 +1,79 @@
+body { 
+  margin: 0;
+  font-family: "Jersey 20", sans-serif;
+  background-color: #f5f0e1;
+  font-size: 20px;
+}
+
+.aesthetic-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #276233;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #fdd8a1;
+}
+
+.button {
+  background-color: #fdd8a1;
+  color: #4b3832;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.footer {
+  background-color: #276233;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  font-family: "Lexend Deca", sans-serif;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.Math12-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+

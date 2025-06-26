@@ -1,0 +1,102 @@
+/* Intro section */
+.Research-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 10vh;
+  padding: 20px;
+}
+
+.Research-intro-text p {
+  font-size: 16px;
+  color: #4b3832;
+  line-height: 1.6;
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0;
+}
+
+/* Projects container */
+.Research-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.Research-container h1 {
+  font-size: 50px;
+  color: #276233;
+  margin-bottom: 30px;
+}
+
+/* Grid layout using CSS Grid */
+.Research-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 30px;
+  padding: 0 20px;
+  align-items: stretch; /* Ensures all items are the same height */
+}
+
+/* Individual research cards (white boxes) */
+.Research-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%; /* Needed to stretch to full row height */
+}
+
+.Research-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.Research-item img,
+.Research-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Title */
+.Research-item h2 {
+  font-size: 20px;
+  color: #276233;
+  margin-bottom: 10px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+/* Description text */
+.Research-item p {
+  font-size: 16px;
+  color: #4b3832;
+  line-height: 1.6;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+/* Responsive layout */
+@media (max-width: 992px) {
+  .Research-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .Research-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .Research-item img {
+    height: 150px;
+  }
+}

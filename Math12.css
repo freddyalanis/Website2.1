@@ -1,0 +1,260 @@
+/* Intro section */
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 10px auto;
+}
+
+.Math12-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 10vh;
+  padding: 20px;
+}
+
+.Math12-intro-text p {
+  font-size: 16px;
+  color: #4b3832;
+  line-height: 1.6;
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0;
+}
+
+.intro-text {
+  max-width: 60%;
+}
+
+.intro-text h1 {
+  font-size: 3rem;
+  color: #276233;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 20px;
+  color: #707070;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.intro-photo img {
+  width: 400px;
+  transform: scaleX(-1);
+  border-radius: 10px; 
+}
+
+/* Projects section */
+.Math12-container {
+  padding: 10px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.Math12-container h1 {
+  font-size: 50px;
+  color: #276233;
+  margin-bottom: 30px;
+}
+
+.Math12-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 1rem;
+}
+
+.Math12-grid.wide-boxes {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.Math12-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 500px;
+  width: 100%;
+}
+
+.Math12-item img {
+  max-width: 100%;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.Math12-item h2 {
+  font-size: 20px;
+  color: #276233;
+  margin-bottom: 10px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.Math12-item p {
+  font-size: 16px;
+  color: #4b3832;
+  line-height: 1.6;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.Math12-item:hover,
+.course-info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Query for projects */
+@media (max-width: 768px) {
+  .Math12-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .Math12-item img {
+    height: 150px;
+  }
+}
+
+/* Book section */
+.book {
+  padding: 20px;
+  background-color: #f5f0e1;
+  text-align: center;
+  color: #276233;
+  border-radius: 10px;
+  max-width: 1200px; 
+  margin: 20px auto;
+}
+
+.book h2 {
+  font-size: 3rem;
+  color: #276233;
+  margin-bottom: 20px;
+}
+
+.book p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #4b3832;
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 1.6;
+}
+
+/* Flower image */
+.flower-image {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 150px;
+  height: auto;
+}
+
+.flower-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Shared white box style for course info (CalFresh, etc.) */
+.course-info {
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.course-info-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+  text-align: left;
+  font-family: "Lexend Deca", sans-serif;
+  color: #4b3832;
+  line-height: 1.6;
+}
+
+.course-info-box h2 {
+  color: #276233;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.course-info-box p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.course-info-box strong {
+  color: #276233;
+  font-weight: 600;
+}
+
+.course-info-box a {
+  color: #5a2ca0;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* For plain text version (no box) */
+.course-info.no-box {
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 20px;
+  margin: 40px auto;
+  max-width: 800px;
+  font-family: "Lexend Deca", sans-serif;
+  color: #4b3832;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.course-info.no-box h2 {
+  font-size: 2rem;
+  color: #276233;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.course-info.no-box a {
+  color: #5a2ca0;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.course-info.no-box strong {
+  color: #276233;
+}
+
+.white-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  font-family: "Lexend Deca", sans-serif;
+  color: #4b3832;
+  line-height: 1.6;
+  text-align: left;
+}

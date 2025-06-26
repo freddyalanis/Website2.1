@@ -1,0 +1,211 @@
+/* Intro section */
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 10px auto;
+}
+
+.Math12-intro {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  text-align: center; /* Centers text within the container */
+  height: 10vh; /* Optional: Makes the section full height of the viewport */
+  padding: 20px; /* Adds some spacing */
+}
+
+.Math12-intro-text p {
+  font-size: 16px;
+  color: #4b3832;
+  line-height: 1.6;
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0; /* Removes default margin for precise centering */
+}
+
+.intro-text {
+  max-width: 60%;
+}
+
+.intro-text h1 {
+  font-size: 3rem;
+  color: #276233;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 20px;
+  color: #707070;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.intro-photo img {
+  width: 400px;
+  transform: scaleX(-1);
+  border-radius: 10px; 
+}
+
+/* Projects section */
+
+.Math12-container {
+  padding: 10px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.Math12-container h1 {
+  font-size: 50px;
+  color: #276233;
+  margin-bottom: 30px;
+}
+
+.Math12-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.Math12-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Math12-item img {
+  max-width: 100%;
+  width: 100%; /* Ensure the image fills the container */
+  height: 200px; /* Set a consistent height */
+  object-fit: cover; /* Scale and crop the image to fit the dimensions */
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.Math12-item h2 {
+  font-size: 20px;
+  color: #276233;
+  margin-bottom: 10px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.Math12-item p {
+  font-size: 16px;
+  color: #4b3832;
+  line-height: 1.6;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.Math12-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.course-info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Media Query for projects */
+
+@media (max-width: 768px) {
+  .Math12-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .Math12-item img {
+    height: 150px; /* Reduce height for smaller screens */
+  }
+}
+
+.book {
+  padding: 20px;
+  background-color: #f5f0e1;
+  text-align: center;
+  color: #276233;
+  border-radius: 10px;
+  max-width: 1200px; 
+  margin: 20px auto;
+}
+
+.book h2 {
+  font-size: 3rem;
+  color: #276233;
+  margin-bottom: 20px;
+}
+
+.book p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #4b3832;
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 1.6;
+}
+
+.flower-image {
+  border-radius: 15px; /* Adds rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+  width: 150px; /* Adjust image size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.flower-image:hover {
+  transform: scale(1.1); /* Slightly enlarges the image on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Intensifies shadow on hover */
+}
+
+/* Course Information Section */
+
+.course-info {
+  display: flex;
+  justify-content: center; /* Centers the box horizontally */
+  align-items: center; /* Centers content vertically if needed */
+  padding: 20px;
+  background-color: #f8f8f8; /* Light background for the section */
+  margin: 20px auto;
+}
+
+.course-info-box {
+  padding: 20px;
+  background-color: #fff; /* White background for the box */
+  border-radius: 10px;
+  text-align: left; /* Align text to the left for readability */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 600px; /* Limit width for a compact look */
+  width: 100%; /* Ensure responsiveness */
+}
+
+.course-info-box h2 {
+  font-size: 2rem;
+  color: #276233; /* Green color matching your theme */
+  margin-bottom: 10px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.course-info-box p {
+  font-size: 16px;
+  color: #4b3832;
+  line-height: 1.6;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.course-info-box strong {
+  color: #276233; /* Highlight key information */
+}
+
+
+@media (max-width: 600px) {
+  .research-grid {
+    grid-template-columns: repeat(1, 1fr); /* One column per row on mobile */
+  }
+}
+

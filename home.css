@@ -1,0 +1,213 @@
+/* Intro Section */
+
+.intro {
+  display: flex;
+  align-items: center;        /* Center items vertically */
+  justify-content: center;    /* Center items horizontally */
+  flex-direction: column;     /* Stack items vertically */
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;         /* Center-align text */
+}
+
+.intro-text {
+  max-width: 60%;
+  margin-bottom: 20px;        /* Add spacing between text and photo */
+}
+
+.intro-text h1 {
+  font-size: 3rem;
+  color: #276233;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 18px;
+  color: #4b3832;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.intro-photo img {
+  width: 350px;
+  transform: scaleX(-1);
+  border-radius: 10px;
+}
+
+/* book Section */
+
+.book {
+  padding: 40px;
+  background-color: #f5f0e1;
+  text-align: center;
+  color: #276233;
+  border-radius: 10px;
+  max-width: 1200px; 
+  margin: 40px auto;
+}
+
+.book h2 {
+  font-size: 3rem;
+  color: #276233;
+  margin-bottom: 20px;
+}
+
+.book p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #4b3832;
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 1.6;
+}
+
+.flower-image {
+  border-radius: 15px; /* Adds rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+  width: 150px; /* Adjust image size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.flower-image:hover {
+  transform: scale(1.1); /* Slightly enlarges the image on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Intensifies shadow on hover */
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px; /* Adds space between the image and text */
+}
+
+span {
+  font-size: 16px;
+  color: #333; /* Text color */
+  font-weight: 500;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tech-item img {
+  width: 64px;
+  height: 62px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.tech-item img:hover {
+  transform: scale(1.1);
+}
+
+.tech-item span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4b3832;
+}
+
+/* Spotify Section */
+
+.youtube-section {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.youtube-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.youtube-text {
+  max-width: 50%;
+}
+
+.youtube-text h2 {
+  font-size: 45px;
+  color: #276233;
+  margin-bottom: 10px;
+  margin-top: 100px;
+}
+
+.youtube-text p {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #4b3832;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.youtube-embed {
+  flex: 1;
+  min-width: 300px;
+}
+
+.youtube-embed iframe {
+  width: 100%;
+  height: 352px;
+  border: none;
+  border-radius: 12px;
+}
+
+/*Media Query for Spotify*/
+
+@media (max-width: 768px) {
+  .spotify-content {
+    flex-direction: column;
+  }
+
+  .spotify-text {
+    max-width: 100%;
+  }
+
+  .spotify-embed {
+    margin-top: 20px;
+  }
+}
+
+/* Media Query for Mobile */
+
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-text {
+    max-width: 100%;
+  }
+
+  .intro-photo img {
+    margin-top: 20px;
+  }
+
+  .technologies {
+    max-width: 100%;
+  }
+}
